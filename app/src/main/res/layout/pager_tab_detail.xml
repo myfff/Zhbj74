@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--  xmlns:app="http://schemas.android.com/apk/res-auto“为使用com.viewpagerindicator.CirclePageIndicator
+中定义的属性引入的命名空间-->
+
+<!-- app:
+                radius="10dp"             圆点半径
+                app:fillColor="#ff888888" 圆点移动色
+                app:pageColor="#88ff0000"  原点背景色
+                app:strokeColor="#ff000000"   原点周边颜色
+                app:strokeWidth="2dp" 原点周围宽度-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--
+ <FrameLayout
+        android:id="@+id/fl_"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <view.TopNewsViewPager
+            android:id="@+id/vp_top_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        &lt;!&ndash;  android:background="#a000"背景为透明，&ndash;&gt;
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#a000"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:text="标题"
+                android:textSize="16sp" />
+            &lt;!&ndash;我们需要给Viewpager每个页签中的页面切换时，title改变，我们还需要指示器，我们用开源框架F:viewPagerIndicatorLibrary，&ndash;&gt;
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dip"
+
+                app:fillColor="#88ff0000"
+                app:pageColor="#ff888888"
+                app:radius="3dp"
+                app:strokeColor="#ff000000"
+                app:strokeWidth="2dp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+-->
+
+    <!--头条新闻搞完，我们搞下面的列表新闻部分-->
+
+    <!--  android:cacheColorHint="#fff"   只要listView背景有黑色，只要加上这个属性背景就去掉-->
+    <view.PullToRefreshListview
+        android:id="@+id/lv_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#fff"/>
+    <!--现增加的下拉刷新头布局，后添加的Viewpager头布局，先添加的在上面，后添加的在下面-->
+
+</LinearLayout>

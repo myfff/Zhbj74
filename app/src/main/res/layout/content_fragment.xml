@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--他是主MainActivity分出的两个Fragment中之一Content_Fragment-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fl_content"
+    >
+
+    <view.NoScollviewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bottom_tab_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+           style="@style/tab_style"
+            android:id="@+id/rb_home"
+            android:text="首页"
+            android:textColor="@color/tex_contentfragment_selector"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_home_selector"
+            />
+        <RadioButton
+            android:id="@+id/rb_news"
+            style="@style/tab_style"
+            android:text="新闻中心"
+            android:textColor="@color/tex_contentfragment_selector"
+            android:drawableTop="@drawable/tab_news_selector"
+            />
+        <RadioButton
+            android:id="@+id/rb_smart"
+            style="@style/tab_style"
+            android:text="智慧服务"
+            android:textColor="@color/tex_contentfragment_selector"
+            android:drawableTop="@drawable/tab_smart_selector"
+            />
+        <RadioButton
+            android:id="@+id/rb_govaffairs"
+            style="@style/tab_style"
+            android:text="政务"
+            android:textColor="@color/tex_contentfragment_selector"
+            android:drawableTop="@drawable/tab_govaffairs_selector"
+            />
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/tab_style"
+            android:textColor="@color/tex_contentfragment_selector"
+            android:text="设置"
+            android:drawableTop="@drawable/tab_setting_selector"
+            />
+
+
+        </RadioGroup>
+
+
+</LinearLayout>

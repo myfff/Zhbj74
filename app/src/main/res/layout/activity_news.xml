@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_news"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/title_red_bg"
+    android:orientation="vertical"
+    tools:context="aygxy.zhbj74.NewsDetailActivity">
+
+    <include layout="@layout/title_bar"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/web_view"
+            >
+
+
+            <!--进度条将WebView压住-->
+            <ProgressBar
+                android:indeterminateDrawable="@drawable/shape_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="144dp"
+                android:layout_y="181dp"
+                android:id="@+id/pb_loading"
+                android:visibility="visible"/>
+        </WebView>
+
+        </FrameLayout>
+
+</LinearLayout>

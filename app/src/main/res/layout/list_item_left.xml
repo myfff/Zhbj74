@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--侧边栏的条目样式布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000">
+
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:id="@+id/tv_left_menu"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="新闻"
+        android:enabled="false"
+        android:drawableLeft="@drawable/btn_menu_selector"
+        android:textColor="@color/tex_menu_selector"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:textSize="22sp"
+        />
+
+</LinearLayout>

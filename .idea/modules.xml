@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Zhbj74.iml" filepath="$PROJECT_DIR$/Zhbj74.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraay/libraay.iml" filepath="$PROJECT_DIR$/libraay/libraay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraryDemo/libraryDemo.iml" filepath="$PROJECT_DIR$/libraryDemo/libraryDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewPagerIndicatorLibrary/viewPagerIndicatorLibrary.iml" filepath="$PROJECT_DIR$/viewPagerIndicatorLibrary/viewPagerIndicatorLibrary.iml" />
+    </modules>
+  </component>
+</project>

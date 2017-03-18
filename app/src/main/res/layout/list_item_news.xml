@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--此布局页签新闻listview 的条目布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <!-- android:scaleType="centerCrop"此属性会经常用，裁剪图片-->
+    <!--  android:background="#a000"
+        android:padding="1dp"
+        设置背景为黑色，padding为1dp，是为了给鱼片加一下黑色的边框，
+        但发现如果centerCrop"上下没边框，设置fullXY都有，小bug-->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/xsearch_msg_pull_arrow_down"
+        android:id="@+id/iv_icon"
+        android:scaleType="centerCrop"
+        android:background="#a00"/>
+
+    <TextView
+        android:text="TextViewskdfjggg没那个过过过过过过过过过过过过过过过过过过过过"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:id="@+id/tv_title_news"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_data"
+        android:textColor="#a000"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/iv_icon"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_toEndOf="@+id/iv_icon"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+
+</RelativeLayout>

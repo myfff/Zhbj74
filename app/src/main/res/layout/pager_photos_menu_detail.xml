@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <GridView
+            android:id="@+id/gv_photos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:visibility="gone" />
+
+
+        <!--如果listView背景为黑色，我们就  android:cacheColorHint="#fff"
+        还可以去掉分割线  android:divider="@null"-->
+        <ListView
+            android:id="@+id/lv_photos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#fff"
+            android:divider="@null" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

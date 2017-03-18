@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><!--页签中的Viewpager单抽出，加入到ListView 中。可以一起下拉-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <view.TopNewsViewPager
+            android:id="@+id/vp_top_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!--  android:background="#a000"背景为透明，-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#a000"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:text="标题"
+                android:textSize="16sp" />
+            <!--我们需要给Viewpager每个页签中的页面切换时，title改变，我们还需要指示器，我们用开源框架F:viewPagerIndicatorLibrary，-->
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dip"
+
+                app:fillColor="#88ff0000"
+                app:pageColor="#ff888888"
+                app:radius="3dp"
+                app:strokeColor="#ff000000"
+                app:strokeWidth="2dp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

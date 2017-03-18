@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><!--五个标签页布局，要放到主Content_fragment的Viewpager中，，，五个标签页我们也只讲了一个新闻中心--><!--他的FrameLayout用来放置4个侧边栏详情页的-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar" />
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

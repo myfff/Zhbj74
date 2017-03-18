@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--引导页布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_guide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aygxy.zhbj74.GuideActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guide"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_start"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bt_guide_bg_selector"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:textColor="@color/bt_guide_selector"
+        android:text="开始体验"/>
+
+
+    <!--如果只为线性布局，加小红点的时候会出现红河白点不重合
+    所以此处我们用相对布局，只压迫我们不为其设置相对位置，就都会从左上角排列
+    这样的话第一个显示的就会是红点（与第一个小白点重合）-->
+          <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp">
+              <LinearLayout
+                android:id="@+id/ll_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+              <ImageView
+                android:id="@+id/iv_red_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shape_point_red" />
+          </RelativeLayout>
+</RelativeLayout>
